@@ -1,5 +1,12 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  for (let i = 0; i<word.length/2; i++){
+    const j = word.length - 1 - i;
+    if (word[i] === word[j]){
+      return true
+    }
+      return false
+  }
 }
 
 /* 
@@ -8,6 +15,8 @@ function isPalindrome(word) {
 
 /*
   Add written explanation of your solution here
+  The code iterates relatively by comparing start letters corresponding to the letters from the end
+  If all letters match it then return true else false
 */
 
 // You can run `node index.js` to view these console logs
